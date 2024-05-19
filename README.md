@@ -27,3 +27,5 @@ To access the random forest model,
 
 2. run all the cells from the start till the last cell under the subheading `1. using random forests`
 
+P.S. My .ipynp file is not able to preview properly. so please first download the file and open the file using Colab to view it
+
