@@ -15,11 +15,15 @@ I have chosen not to apply feature selection as there are very few available fea
 ###test train split
 I have split the dataset with a test_size of 0.25
 ## step 3: building model
-To solve the above problem I chose random forest because it prevents overfitting, thus more accurate than decision trees. My first choice was to build my model using pytorch but that didn't turn out well. So, I went for one of the best options to perform regression i.e. random forest using scikit learn. I did consider using XGboost regressor but as random forest provided satisfactory results I didn't bother implementing XGboost.
+To solve the above problem I chose random forest because it prevents overfitting, thus more accurate than decision trees. My first choice was to build my model using pytorch but that didn't turn out well. I tried various things to improve the performance of my model like adding more hidden layers, increasing nodes in hidden layers, and adding dropout and normalisation layers but nothing seemed to increase the performance.
+
+So, I went for one of the best options to perform regression i.e. random forest using scikit learn. I did consider using XGboost regressor but as random forest provided satisfactory results I didn't bother implementing XGboost.
 ### Performing regression using random forest regressor
 By using random forest regressor from Scikit Learn I was able to build a regressor which was able to predict the lung capacity with a mean absolute error of 0.89
+![Alt text](/relative/path/to/img1.jpg?raw=true "Optional Title")
 ### trying to build my regressor using Pytorch
 The architecture that I used for my regressor is `12(input)->16->1(output)`.
+![Alt text](/relative/path/to/img2.jpg?raw=true "Optional Title")
 
 the model performed poorly on the dataset with a mean absolute error of 2.33 😅
 
