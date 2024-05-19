@@ -35,7 +35,7 @@ You can access my model by uploading the model parameters provided by running th
 
 To access the random forest model,
 
-1. upload the data file
+1. upload the CSV file containing the dataset 
 
 2. run all the cells from the start till the last cell under the subheading `1. using random forests`
 
