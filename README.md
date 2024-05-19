@@ -7,13 +7,15 @@ I was able to acquire the required data by searching lung tidal volume vs age he
 
 (the data has been sampled from 747 people)
 
-## step 2: building the model 
+## step 2: preprocessing data
 ### Data preprocessing and visualisation
 I have converted the available data from CSV format to Numpy and PyTorch tensors
 ### feature selection
 I have chosen not to apply feature selection as there are very few available features
 ###test train split
 I have split the dataset with a test_size of 0.25
+## step 3: building model
+To solve the above problem I chose random forest because it prevents overfitting, thus more accurate than decision trees. My first choice was to build my model using pytorch but that didn't turn out well. So, I went for one of the best options to perform regression i.e. random forest using scikit learn. I did consider using XGboost regressor but as random forest provided satisfactory results I didn't bother implementing XGboost.
 ### Performing regression using random forest regressor
 By using random forest regressor from Scikit Learn I was able to build a regressor which was able to predict the lung capacity with a mean absolute error of 0.89
 ### trying to build my regressor using Pytorch
