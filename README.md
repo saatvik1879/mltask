@@ -20,10 +20,10 @@ To solve the above problem I chose random forest because it prevents overfitting
 So, I went for one of the best options to perform regression i.e. random forest using scikit learn. I did consider using XGboost regressor but as random forest provided satisfactory results I didn't bother implementing XGboost.
 ### Performing regression using random forest regressor
 By using random forest regressor from Scikit Learn I was able to build a regressor which was able to predict the lung capacity with a mean absolute error of 0.89
-![Alt text](/relative/path/to/img1.jpg?raw=true "Optional Title")
+![Alt text](/img1.jpg?raw=true "Optional Title")
 ### trying to build my regressor using Pytorch
 The architecture that I used for my regressor is `12(input)->16->1(output)`.
-![Alt text](/relative/path/to/img2.jpg?raw=true "Optional Title")
+![Alt text](/img2.jpg?raw=true "Optional Title")
 
 the model performed poorly on the dataset with a mean absolute error of 2.33 😅
 
